@@ -1,4 +1,4 @@
-# Think-Unparalleled
+# Think Unparalleled
 Our company's vision is centered around the idea of Thinking Unparalleled™, which drives us to develop innovative products and services that push the boundaries of what's possible.
 
 Think Unparalleled™ and change the world for the better. Do what others think is crazy. Take risks. Challenge the norms. See what others don't see.
