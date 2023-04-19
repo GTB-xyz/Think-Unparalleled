@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+User-agent: Google-adstxt
+Disallow:
+
+Sitemap: https://thinkunparalleled.com/sitemap.xml
