@@ -1,0 +1,31 @@
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault A0
+	ExpiresByType image/gif A691200
+	ExpiresByType image/png A691200
+	ExpiresByType image/jpeg A691200
+	ExpiresByType text/css A691200
+	ExpiresByType text/javascript A691200
+	ExpiresByType application/javascript A691200
+</IfModule>
+
+<IfModule mod_negotiation.c>
+	#Options -MultiViews
+</IfModule>
+RewriteEngine On
+RewriteBase /
+
+#### PERSISTENT CONTENT ####
+
+#### PERSISTENT CONTENT END ####
+DirectoryIndex index.php index.html
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+Options -Indexes
+
+#### PERSISTENT CONTENT ####
