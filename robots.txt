@@ -1,6 +1,4 @@
-User-agent: *
-Allow: /
-User-agent: Google-adstxt
-Disallow:
+User-Agent: *
+Disallow: /cdn-cgi/
 
 Sitemap: https://thinkunparalleled.com/sitemap.xml
